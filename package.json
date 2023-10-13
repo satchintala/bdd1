@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/cypress run",
+    "test:chrome": "./node_modules/.bin/cypress run --browser chrome --headed",
+    "test:sanity": "./node_modules/.bin/cypress run --browser chrome --headed --env tags='@sanity'"
   },
   "keywords": [],
   "author": "",
